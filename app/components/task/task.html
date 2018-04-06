@@ -1,0 +1,20 @@
+
+<li>
+	<div class="row">
+	<div class="col-sm-2">
+   <!--  <input type="checkbox" ng-model="task.active" ng-dbclick="showCheckbox($taskShow)" ng-hide="currentUpdating === $taskShow"> -->
+   <input type="checkbox" ng-click="vm.OnCheck(task.active)" />
+ </div>
+
+ <div class="col-sm-4">{{vm.task.taskName}}
+	<!-- <button ng-click="vm.onDelete()">remove</button> -->
+	
+</div>
+<div class="col-sm-2">
+	<span class="glyphicon glyphicon-remove" ng-click="vm.onDelete(task.taskName)">
+     </span> 
+</div>
+
+</div>
+
+</li>

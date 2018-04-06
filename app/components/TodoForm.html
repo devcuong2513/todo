@@ -1,0 +1,42 @@
+<!-- <div class="container">
+    <div class="col-md-6 col-md-offset-3">
+        <task></task>
+        <input type="text" name="task" placeholder="What needs to be done" ng-model="taskName"
+               ng-keypress="($event.charCode==13)?updateListTask(taskName):return"/>
+        <ul class="listTask list-unstyled">
+            <li ng-repeat="task in listTask track by $index">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <input type="checkbox" ng-model="task.active" ng-dbclick="showCheckbox($taskShow)" ng-hide="currentUpdating === $taskShow">
+                    </div>
+                    <div class="col-sm-4">
+                        <span ng-dblclick="showUpdateForm($index)" ng-hide="currentUpdating === $index">
+                            {{task.taskName}}
+                         </span>
+                        <span ng-show="currentUpdating === $index">
+                            <input type="text" ng-model="task.taskName"
+                                ng-keypress="($event.charCode==13)?updateTask():return"/>
+                        </span>
+                    </div>
+                    <div class="col-sm-2">
+                        <span class="glyphicon glyphicon-remove" ng-click="removeTask(task.taskName)">
+                        </span> 
+                    </div>
+                </div>
+        </ul>
+            </li>
+        <div>
+            <div class="col-md-4">{{ listTask.length }} items left</div>
+            <div class="col-md-8">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item" ng-click="showAll()">All</li>
+                    <li class="list-inline-item" ng-click="filterActive()">Active</li>
+                    <li class="list-inline-item" ng-click="filterComplete()">Completed</li>
+                    <li class="list-inline-item" ng-click="filterClear()">Clear completed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+ -->
